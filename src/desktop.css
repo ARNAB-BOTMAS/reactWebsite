@@ -1,0 +1,26 @@
+.desktop-nav{
+    display: flex;
+    background: #fff;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+}
+.desktop-logo-nav{
+    padding-left: 60px;
+}
+.desktop-nav-link{
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; 
+    padding-right: 60px;
+}
+.desktop-nav-link ul{
+    list-style: none;
+    display: inline;
+}
+
+.desktop-nav-link li{
+    display: inline;
+    padding: 10px;
+    justify-content: center;
+}

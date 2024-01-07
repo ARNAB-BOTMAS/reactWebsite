@@ -1,0 +1,83 @@
+.phone-nav {
+    background: #fff;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    z-index: 1;
+}
+
+.phone-nav-link {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-nav-link ul {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    gap: 20px;
+    background: #fff;
+    /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.336); */
+    /* background-color: antiquewhite; */
+    width: 70%;
+    height: 100vh;
+    padding: 40px 0;
+    margin-top: 20px;
+    left: -100%;
+    /* top: 7.%; */
+    transition: 0.3s;
+    z-index: 2;
+
+}
+
+.phone-nav-link ul li {
+    list-style: none;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+
+.hamburgs {
+    display: block;
+    cursor: pointer;
+    padding-right: 15px;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background: #000;
+}
+
+.hamburgs.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburgs.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.hamburgs.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.phone-nav-link.active ul{
+    left: 0;
+}
+
+.phone-logo-nav{
+    padding-left: 15px;
+}

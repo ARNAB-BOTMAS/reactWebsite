@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import './frame.css';
+import './desktop.css';
+import './phone.css';
+import PhoneNav from './PhoneNav';
+import DesktopNav from './DesktopNav';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='desktop'>
+        <DesktopNav />
+      </div>
+      <div className='phone'>
+        <PhoneNav />
+      </div>
+      <div className='tab'>
+        Tab
+      </div>
     </div>
   );
 }
