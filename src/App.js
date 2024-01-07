@@ -6,8 +6,8 @@ import DesktopNav from './DesktopNav';
 import TabNav from './TabNav';
 
 import DesktopHeader from './DesktopHeader';
-import PhoneHeader from './PhoneHeader'; // Correct the import statement
-
+import PhoneHeader from './PhoneHeader'; 
+import TabHeader from './TabHeader';
 function App() {
   return (
     <div className="App">
@@ -21,6 +21,7 @@ function App() {
       </div>
       <div className='tab'>
         <TabNav />
+        <TabHeader />
       </div>
     </div>
   );

@@ -5,7 +5,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0;
+    padding: 15px 0;
     width: 100%;
     /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
     z-index: 1;
@@ -33,7 +33,7 @@
     padding: 40px 0;
     margin-top: 20px;
     left: -100%;
-    top: 7%;
+    top: 3.5%;
     transition: 0.3s;
     z-index: 2;
 
@@ -81,4 +81,40 @@
 
 .tab-logo-nav{
     padding-left: 15px;
+}
+
+.tab-header {
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(45deg, rgba(245, 70, 66, 0.75), rgba(8, 83, 156, 0.75)),
+                url('image/banner2.gif') center/cover no-repeat;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab-profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* height: 100%; */
+}
+
+.tab-profile h1{
+    margin: 0;
+    /* padding-left: 50px; */
+    text-align: left;
+    font-size: 70px;
+    color: #fff;
+}
+
+.tab-profile-img {
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+    max-height: 100%; /* Ensure the image doesn't exceed its container's height */
 }
