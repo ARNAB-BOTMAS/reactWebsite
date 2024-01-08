@@ -1,9 +1,10 @@
+import logo from './logo.svg';
 import './desktop.css';
 const DesktopNav = () =>{
     return(
         <nav className='desktop-nav'>
         <div className='desktop-logo-nav'>
-          <h1>Logo</h1>
+          <img src={logo} className="desktop-app-logo" alt="logo" />
         </div>
         <div className='desktop-nav-link'>
           <ul>

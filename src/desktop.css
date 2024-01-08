@@ -94,9 +94,18 @@
     display: flex;
     align-items: center;
     border-radius: 50%;
+    box-shadow: 0px 5px 10px #0000004e;
+    transition: all 0.3s;
 }
 
 .desktop-profile-link-img {
     width: 40px;
 }
 
+.desktop-profile-link a:hover{
+    transform: scale(1.15);
+}
+
+.desktop-app-logo{
+    width: 120px;
+}

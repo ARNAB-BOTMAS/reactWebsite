@@ -1,3 +1,4 @@
+import logo from './logo.svg';
 import React, { useState } from 'react';
 import './tab.css'
 
@@ -11,7 +12,7 @@ const TabNav = () => {
     return (
         <nav className={`tab-nav ${isActive ? 'active' : ''}`}>
             <div className='tab-logo-nav'>
-                <h1>Logo</h1>
+                <img src={logo} className="tab-app-logo" alt="logo" />
             </div>
             <div className={`tab-nav-link ${isActive ? 'active' : ''}`}>
                 <ul>

@@ -1,3 +1,4 @@
+import logo from './logo.svg';
 import React, { useState } from 'react';
 import './phone.css'
 
@@ -11,7 +12,7 @@ const PhoneNav = () => {
     return (
         <nav className={`phone-nav ${isActive ? 'active' : ''}`}>
             <div className='phone-logo-nav'>
-                <h1>Logo</h1>
+            <img src={logo} className="phone-app-logo" alt="logo" />
             </div>
             <div className={`phone-nav-link ${isActive ? 'active' : ''}`}>
                 <ul>
