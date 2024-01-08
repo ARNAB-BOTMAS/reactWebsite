@@ -82,3 +82,21 @@
     transform: scale(1.15);
 }
 
+.desktop-profile-link {
+    display: flex;
+    align-items: center;
+}
+
+.desktop-profile-link a {
+    margin: 0 10px;
+    background: #fff;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.desktop-profile-link-img {
+    width: 40px;
+}
+
