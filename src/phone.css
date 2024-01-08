@@ -102,11 +102,17 @@
     /* height: 100%; */
 }
 
-.phone-profile h1{
-    margin: 0;
-    /* padding-left: 50px; */
+.phone-profile-text{
     text-align: left;
-    /* font-size: 70px; */
+}
+.phone-profile-text h1{
+    margin: 0;
+    font-size: 30px;
+    color: #fff;
+}
+
+.phone-profile-text h2{
+    font-size: 17.5px;
     color: #fff;
 }
 
@@ -116,5 +122,15 @@
     border-radius: 50%;
     max-width: 100%; /* Ensure the image doesn't exceed its container's width */
     max-height: 100%; /* Ensure the image doesn't exceed its container's height */
+}
+
+.phone-profile-button{
+    margin: 10px 0;
+    width: 100px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0px 5px 10px #0000004e;
+    transition: all 0.3s;
 }
 

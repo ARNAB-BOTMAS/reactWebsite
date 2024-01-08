@@ -1,5 +1,5 @@
 .tab-nav {
-    font-size: x-large;
+    font-size: xx-large;
     background: #fff;
     position: fixed;
     display: flex;
@@ -102,12 +102,18 @@
     text-align: center;
     /* height: 100%; */
 }
-
-.tab-profile h1{
+.tab-profile-text{
+    text-align: left;
+}
+.tab-profile-text h1{
     margin: 0;
     /* padding-left: 50px; */
-    text-align: left;
     font-size: 70px;
+    color: #fff;
+}
+
+.tab-profile-text h2{
+    font-size: 40px;
     color: #fff;
 }
 
@@ -115,6 +121,17 @@
     display: block;
     margin: auto;
     border-radius: 50%;
-    max-width: 100%; /* Ensure the image doesn't exceed its container's width */
-    max-height: 100%; /* Ensure the image doesn't exceed its container's height */
+    max-width: 80%; /* Ensure the image doesn't exceed its container's width */
+    max-height: 80%; /* Ensure the image doesn't exceed its container's height */
+}
+
+.tab-profile-button{
+    margin: 10px 0;
+    font-size: 20px;
+    width: 150px;
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0px 5px 10px #0000004e;
+    transition: all 0.3s;
 }
