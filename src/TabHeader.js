@@ -33,7 +33,7 @@ const TabHeader = () => {
   }, []); // Empty dependency array ensures that the effect runs only once on mount
 
   return (
-    <header className='tab-header'>
+    <header className='tab-header' id='home-tab'>
       <div className='tab-profile'>
         <img src={profile} className="tab-profile-img" alt="profile pic" />
         <div className='tab-profile-text'>

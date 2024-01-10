@@ -33,7 +33,7 @@ const PhoneHeader = () => {
   }, []); // Empty dependency array ensures that the effect runs only once on mount
 
   return (
-    <header className='phone-header'>
+    <header className='phone-header' id='home-phone'>
       <div className='phone-profile'>
         <img src={profile} className="phone-profile-img" alt="profile pic" />
         <div className='phone-profile-text'>
