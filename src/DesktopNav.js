@@ -8,12 +8,12 @@ const DesktopNav = () =>{
         </div>
         <div className='desktop-nav-link'>
           <ul>
-            <li>Home</li>
-            <li>About Me</li>
-            <li>Skill</li>
-            <li>Education</li>
-            <li>Project</li>
-            <li>Contact</li>
+              <a href='#home-desktop'>Home</a>
+              <a href='#about-me-desktop'><li>About Me</li></a>
+              <a href='#skill-desktop'><li>Skill</li></a>
+              <a href='#education-desktop'><li>Education</li></a>
+              <a href='#project-desktop'><li>Project</li></a>
+              <a href='#contact-desktop'><li>Contact</li></a>
           </ul>
         </div>
       </nav>

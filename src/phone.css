@@ -155,3 +155,43 @@
 .phone-app-logo{
     width: 100px;
 }
+
+.phone-about{
+    padding: 20px 0;
+    text-align: center;
+}
+.phone-about-inner{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+}
+.phone-about-inner-image{
+    width: 50vw;
+    margin: 0 50px;
+    border-radius: 20px;
+    border: 5px solid white;
+    box-shadow: 0 5px 10px #0000004e;
+    /* filter: grayscale(1) brightness(1.4); */
+    /* transition: all 0.3s; */
+}
+
+.phone-about-text{
+    text-align: left;
+    padding: 20px 50px;
+}
+
+.download-resume-phone{
+    width: 100px;
+    padding: 10px;
+    border: none;
+    background: #E25E3E;
+    color: #fff;
+    border-radius: 10px;
+    /* transition: all 0.2s; */
+}
+
+.download-resume-phone:hover{
+    /* transform: scale(1.115); */
+    background: #841e04;
+    /* box-shadow: 0 0 20px #0000004e; */
+}

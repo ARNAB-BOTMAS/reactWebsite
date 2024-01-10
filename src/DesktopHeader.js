@@ -33,7 +33,7 @@ const DesktopHeader = () => {
   }, []); // Empty dependency array ensures that the effect runs only once on mount
 
   return (
-    <header className='desktop-header'>
+    <header className='desktop-header' id='home-desktop'>
       <div className='desktop-profile'>
         <img src={profile} className="desktop-profile-img" alt="profile pic" />
         <div className='desktop-profile-text'>

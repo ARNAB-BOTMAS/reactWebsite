@@ -16,12 +16,12 @@ const PhoneNav = () => {
             </div>
             <div className={`phone-nav-link ${isActive ? 'active' : ''}`}>
                 <ul>
-                    <li>Home</li>
-                    <li>About Me</li>
-                    <li>Skill</li>
-                    <li>Education</li>
-                    <li>Project</li>
-                    <li>Contact</li>
+                    <a href='#home-phone'>Home</a>
+                    <a href='#about-me-phone'><li>About Me</li></a>
+                    <a href='#skill-phone'><li>Skill</li></a>
+                    <a href='#education-phone'><li>Education</li></a>
+                    <a href='#project-phone'><li>Project</li></a>
+                    <a href='#contact-phone'><li>Contact</li></a>
                 </ul>
             </div>
             <div className={`hamburgs ${isActive ? 'active' : ''}`} onClick={handleHamburgerClick}>
