@@ -25,7 +25,7 @@ function download(){
 const PhoneAbout = () =>{
     return(
         <div className="phone-about" id='about-me-phone'>
-            <h1>About Me</h1>
+            <h1><i class="fa fa-address-card"></i> About Me</h1>
             <div className='phone-about-inner'>
                 <div className="phone-about-image">
                     <img src={img} className='phone-about-inner-image'alt='Arnab Mondal'/>
