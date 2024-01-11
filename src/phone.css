@@ -249,4 +249,53 @@
     color: #fff;
 }
 
+.phone-education{
+    padding: 40px 30px;
+    text-align: center;
+    /* font-size: small; */
+}
+.phone-education-card {
+    display: flex;
+    margin: 20px 0;
+    padding: 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.phone-education-image {
+    flex: 1;
+    
+}
+
+.phone-education-image-inner {
+    width: 100%;
+    height: 100%;
+}
+
+.phone-education-text-inner {
+    flex: 2;
+    text-align: left;
+    justify-content: center;
+    vertical-align: middle;
+    padding: 10px 10px;
+}
+
+.phone-education h2, .phone-education h3, .phone-education p {
+    font-size: 3.8vw;
+    margin: 0;
+    color: #333;
+}
+
+.phone-education h2 {
+    font-size: 4.5vw;
+}
+
+.phone-education h3 {
+    font-size: 4vw;
+    color: #888;
+}
+
+
 

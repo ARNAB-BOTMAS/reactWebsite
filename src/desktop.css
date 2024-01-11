@@ -198,4 +198,49 @@
 .desktop-skill-card h3{
     color: #fff;
 }
+.desktop-education{
+    padding: 40px 100px;
+    text-align: center;
+}
+.desktop-education-card {
+    display: flex;
+    margin: 20px;
+    padding: 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
+.desktop-education-image {
+    flex: 1;
+    
+}
+
+.desktop-education-image-inner {
+    width: 100%;
+    height: 100%;
+}
+
+.desktop-education-text-inner {
+    flex: 2;
+    text-align: left;
+    justify-content: center;
+    vertical-align: middle;
+    padding: 20px 10px;
+}
+
+.desktop-education h2, .desktop-education h3, .desktop-education p {
+    font-size: 1.8vw;
+    margin: 0;
+    color: #333;
+}
+
+.desktop-education h2 {
+    font-size: 2.5vw;
+}
+
+.desktop-education h3 {
+    font-size: 2vw;
+    color: #888;
+}

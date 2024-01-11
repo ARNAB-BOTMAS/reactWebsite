@@ -210,6 +210,7 @@
     color: #fff;
     background: #711DB0;
     text-align: center;
+    font-size: x-large;
 }
 .tab-skill-inner{
     display: grid;
@@ -258,4 +259,55 @@
     color: #fff;
 }
 
+.tab-education{
+    padding: 40px 30px;
+    text-align: center;
+    font-size: x-large;
+}
+
+.tab-education h1{
+    font-size: 70px;
+}
+.tab-education-card {
+    display: flex;
+    margin: 20px 0;
+    padding: 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tab-education-image {
+    flex: 1;
+    
+}
+
+.tab-education-image-inner {
+    width: 100%;
+    height: 100%;
+}
+
+.tab-education-text-inner {
+    flex: 2;
+    text-align: left;
+    justify-content: center;
+    vertical-align: middle;
+    padding: 10px 10px;
+}
+
+.tab-education h2, .tab-education h3, .tab-education p {
+    /* font-size: 2.8vw; */
+    margin: 0;
+    color: #333;
+}
+
+.tab-education h2 {
+    /* font-size: 3.5vw; */
+}
+
+.tab-education h3 {
+    /* font-size: 3vw; */
+    color: #888;
+}
 
