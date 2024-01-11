@@ -1,28 +1,17 @@
 import img from './image/aboutme.png';
 import './desktop.css';
 
-function download(){
-    var pdfPath = './document/CV2.pdf';
-
-    // Create an anchor element
-    var link = document.createElement('a');
-
-    // Set the download attribute and the file path
-    link.download = 'ArnabResume.pdf';
-    link.href = pdfPath;
-    link.target = "_blank";
-
-    // Append the anchor element to the document
-    document.body.appendChild(link);
-
-    // Trigger a click event on the anchor element
-    link.click();
-
-    // Remove the anchor element from the document
-    document.body.removeChild(link);
-}
-
 const DesktopAbout = () =>{
+    const download = () =>{
+        var pdfPath = 'document/CV2.pdf';
+        var link = document.createElement('a');
+        link.download = 'ArnabResume.pdf';
+        link.href = pdfPath;
+        link.target = "_blank";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
     return(
         <div className="desktop-about" id='about-me-desktop'>
             <h1><i class="fa fa-address-card"></i> About Me</h1>
