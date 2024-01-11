@@ -18,7 +18,7 @@ import './desktop.css';
 const DesktopSkill = () =>{
     return(
         <div className="desktop-skill" id='skill-desktop'>
-            <h1><i class="fa fa-gear fa-spin"></i> Skills</h1>
+            <h1><i class="fa-solid fa-gear fa-spin"></i> Skills</h1>
             <div className='desktop-skill-inner'>
             <section className='desktop-skill-card'>
                 <img src={android} alt='skill' className='desktop-skill-card-image'/>

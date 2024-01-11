@@ -14,6 +14,9 @@ import TabSkill from './TabSkill';
 import DesktopEdu from './DesktopEdu';
 import PhoneEdu from './PhoneEdu';
 import TabEdu from './TabEdu';
+import DesktopProject from './DesktopProject';
+import PhoneProject from './PhoneProject';
+import TabProject from './TabProject';
 
 const FrameChange = () => {
     return (
@@ -25,6 +28,7 @@ const FrameChange = () => {
               <DesktopAbout />
               <DesktopSkill />
               <DesktopEdu />
+              <DesktopProject />
             </main>
           </div>
           <div className='phone'>
@@ -34,6 +38,7 @@ const FrameChange = () => {
               <PhoneAbout />
               <PhoneSkill />
               <PhoneEdu />
+              <PhoneProject />
             </main>
           </div>
           <div className='tab'>
@@ -43,6 +48,7 @@ const FrameChange = () => {
               <TabAbout />
               <TabSkill />
               <TabEdu />
+              <TabProject />
             </main>
           </div>
         </div>

@@ -5,7 +5,7 @@ import './desktop.css';
 const DesktopEdu = () =>{
     return(
         <div className='desktop-education' id='education-desktop'>
-            <h1><i class='fa fa-book'></i> Education</h1>
+            <h1><i class="fa-solid fa-book"></i> Education</h1>
             <div className='desktop-education-inner'>
                 <section className='desktop-education-card'>
                     <div className='desktop-education-image'>

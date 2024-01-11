@@ -5,7 +5,8 @@ import './tab.css';
 const TabEdu = () =>{
     return(
         <div className='tab-education' id='education-tab'>
-            <h1><i class='fa fa-book'></i> Education</h1>
+            <h1><i class="fa-solid fa-book"></i> Education</h1>
+            {/* <h1><i class='fa fa-book'></i> Education</h1> */}
             <div className='tab-education-inner'>
                 <section className='tab-education-card'>
                     <div className='tab-education-image'>

@@ -1,4 +1,6 @@
 import img from './image/aboutme.png';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import './desktop.css';
 
 const DesktopAbout = () =>{
@@ -14,7 +16,7 @@ const DesktopAbout = () =>{
     }
     return(
         <div className="desktop-about" id='about-me-desktop'>
-            <h1><i class="fa fa-address-card"></i> About Me</h1>
+            <h1><i class="fa-solid fa-user"></i> About Me</h1>
             <div className='desktop-about-inner'>
                 <div className="desktop-about-image">
                     <img src={img} className='desktop-about-inner-image'alt='Arnab Mondal'/>

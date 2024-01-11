@@ -18,7 +18,8 @@ import './tab.css';
 const TabSkill = () =>{
     return(
         <div className="tab-skill" id='skill-tab'>
-            <h1><i class="fa fa-gear fa-spin"></i> Skills</h1>
+            <h1><i class="fa-solid fa-gear fa-spin"></i> Skills</h1>
+            {/* <h1><i class="fa fa-gear fa-spin"></i> Skills</h1> */}
             <div className='tab-skill-inner'>
             <section className='tab-skill-card'>
                 <img src={android} alt='skill' className='tab-skill-card-image'/>

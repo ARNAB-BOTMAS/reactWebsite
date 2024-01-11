@@ -14,7 +14,8 @@ const TabAbout = () =>{
     }
     return(
         <div className="tab-about" id='about-me-tab'>
-            <h1><i class="fa fa-address-card"></i> About Me</h1>
+            <h1><i class="fa-solid fa-user"></i> About Me</h1>
+            {/* <h1><i class="fa fa-address-card"></i> About Me</h1> */}
             <div className='tab-about-inner'>
                 <div className="tab-about-image">
                     <img src={img} className='tab-about-inner-image'alt='Arnab Mondal'/>

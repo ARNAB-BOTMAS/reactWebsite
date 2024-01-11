@@ -18,7 +18,8 @@ import './phone.css';
 const PhoneSkill = () =>{
     return(
         <div className="phone-skill" id='skill-phone'>
-            <h1><i class="fa fa-gear fa-spin"></i> Skills</h1>
+            <h1><i class="fa-solid fa-gear fa-spin"></i> Skills</h1>
+            {/* <h1><i class="fa fa-gear fa-spin"></i> Skills</h1> */}
             <div className='phone-skill-inner'>
             <section className='phone-skill-card'>
                 <img src={android} alt='skill' className='phone-skill-card-image'/>

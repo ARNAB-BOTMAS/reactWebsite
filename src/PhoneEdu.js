@@ -5,7 +5,8 @@ import './phone.css';
 const PhoneEdu = () =>{
     return(
         <div className='phone-education' id='education-phone'>
-            <h1><i class='fa fa-book'></i> Education</h1>
+            <h1><i class="fa-solid fa-book"></i> Education</h1>
+            {/* <h1><i class='fa fa-book'></i> Education</h1> */}
             <div className='phone-education-inner'>
                 <section className='phone-education-card'>
                     <div className='phone-education-image'>
