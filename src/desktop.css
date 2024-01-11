@@ -150,3 +150,52 @@
     transform: scale(1.115);
     box-shadow: 0 0 20px #0000004e;
 }
+.desktop-skill{
+    padding: 40px 0;
+    color: #fff;
+    background: #711DB0;
+    text-align: center;
+}
+.desktop-skill-inner{
+    display: grid;
+    padding: 40px 300px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.desktop-skill-card-image{
+    width: 120px;
+}
+
+.desktop-skill-card-image-1{
+    width: 120px;
+    padding: 22px 0;
+}
+.desktop-skill-card-image-2{
+    width: 120px;
+    padding: 26px 0;
+}
+
+.desktop-skill-card-image-3{
+    width: 110px;
+}
+.desktop-skill-card-image-4{
+    width: 115px;
+}
+.desktop-skill-card-image-5{
+    width: 120px;
+    padding: 5px 0;
+}
+
+.desktop-skill-card{
+    border-radius: 20px;
+    padding: 20px;
+    width: 120px;
+    /* height: 250px; */
+    background: #092635;
+    text-align: center;
+}
+.desktop-skill-card h3{
+    color: #fff;
+}
+

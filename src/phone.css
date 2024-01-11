@@ -195,3 +195,58 @@
     background: #841e04;
     /* box-shadow: 0 0 20px #0000004e; */
 }
+
+.phone-skill{
+    padding: 20px 0;
+    color: #fff;
+    background: #711DB0;
+    text-align: center;
+}
+.phone-skill-inner{
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    padding: 10px 0;
+    grid-template-columns: repeat(2, 150px);
+    gap: 10px;
+}
+
+.phone-skill-card-image{
+    width: 50px;
+}
+
+.phone-skill-card-image-1{
+    width: 50px;
+    padding: 10px 0;
+}
+.phone-skill-card-image-2{
+    width: 50px;
+    padding: 10px 0;
+}
+
+.phone-skill-card-image-3{
+    width: 50px;
+}
+.phone-skill-card-image-4{
+    width: 50px;
+}
+.phone-skill-card-image-5{
+    width: 50px;
+    padding: 5px 0;
+}
+
+.phone-skill-card{
+    border-radius: 20px;
+    padding: 20px;
+    width: 100px;
+    /* height: 250px; */
+    background: #092635;
+    text-align: center;
+}
+.phone-skill-card h3{
+    color: #fff;
+}
+
+

@@ -201,3 +201,61 @@
     background: #841e04;
     /* box-shadow: 0 0 20px #0000004e; */
 }
+
+.tab-skill h1{
+    font-size: 70px;
+}
+.tab-skill{
+    padding: 20px 50px;
+    color: #fff;
+    background: #711DB0;
+    text-align: center;
+}
+.tab-skill-inner{
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    padding: 10px 120px;
+    grid-template-columns: repeat(3, 230px);
+    gap: 10px;
+}
+
+.tab-skill-card-image{
+    width: 150px;
+}
+
+.tab-skill-card-image-1{
+    width: 150px;
+    padding: 25px 0;
+}
+.tab-skill-card-image-2{
+    width: 150px;
+    padding: 30px 0;
+}
+
+.tab-skill-card-image-3{
+    width: 150px;
+}
+.tab-skill-card-image-4{
+    width: 150px;
+}
+.tab-skill-card-image-5{
+    width: 130px;
+    padding: 18px 0;
+}
+
+.tab-skill-card{
+    border-radius: 20px;
+    padding: 20px;
+    width: 150px;
+    /* height: 250px; */
+    background: #092635;
+    text-align: center;
+}
+.tab-skill-card h3{
+    color: #fff;
+}
+
+
