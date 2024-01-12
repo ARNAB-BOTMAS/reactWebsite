@@ -44,7 +44,9 @@ const PhoneHeader = () => {
             <h2>
                 I'm into <span className="phone-auto-type"></span> 
             </h2>
-            <button className='phone-profile-button'>About Me</button>
+            <a href='#about-me-phone'>
+              <button className='phone-profile-button'>About Me</button>
+            </a>
             <div className='phone-profile-link'>
                 <a href="https://www.facebook.com/shagor.roy.370?mibextid=JRoKGi" target="_blank" rel="noopener noreferrer"><img src={facebook} className='phone-profile-link-img' alt="Facebook Logo"/></a>
                 <a href="https://www.instagram.com/shagor.roy.370/" target="_blank" rel="noopener noreferrer"><img src={instagrame} className='phone-profile-link-img' alt="Instagrame Logo"/></a>

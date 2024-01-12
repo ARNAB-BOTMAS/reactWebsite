@@ -44,7 +44,9 @@ const TabHeader = () => {
             <h2>
                 I'm into <span className="tab-auto-type"></span> 
             </h2>
-            <button className='tab-profile-button'>About Me</button>
+            <a href='#about-me-tab'>
+              <button className='tab-profile-button'>About Me</button>
+            </a>
             <div className='tab-profile-link'>
                 <a href="https://www.facebook.com/shagor.roy.370?mibextid=JRoKGi" target="_blank" rel="noopener noreferrer"><img src={facebook} className='tab-profile-link-img' alt="Facebook Logo"/></a>
                 <a href="https://www.instagram.com/shagor.roy.370/" target="_blank" rel="noopener noreferrer"><img src={instagrame} className='tab-profile-link-img' alt="Instagrame Logo"/></a>
