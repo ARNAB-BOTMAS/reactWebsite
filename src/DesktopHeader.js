@@ -32,6 +32,16 @@ const DesktopHeader = () => {
     };
   }, []); // Empty dependency array ensures that the effect runs only once on mount
 
+  const scrollToSection = (sectionId) => {
+    const sectionElement = document.getElementById(sectionId);
+
+    if (sectionElement) {
+      sectionElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  };
   return (
     <header className='desktop-header' id='home-desktop'>
       <div className='desktop-profile'>
@@ -44,9 +54,9 @@ const DesktopHeader = () => {
             <h2>
                 I'm into <span className="desktop-auto-type"></span> 
             </h2>
-            <a href='#about-me-desktop'>
-              <button className='desktop-profile-button'>About Me</button>
-            </a>
+            {/* <a href='#about-me-desktop'> */}
+              <button className='desktop-profile-button' onClick={() => scrollToSection('about-me-desktop')}>About Me</button>
+            {/* </a> */}
             <div className='desktop-profile-link'>
                 <a href="https://www.facebook.com/shagor.roy.370?mibextid=JRoKGi" target="_blank" rel="noopener noreferrer"><img src={facebook} className='desktop-profile-link-img' alt="Facebook Logo"/></a>
                 <a href="https://www.instagram.com/shagor.roy.370/" target="_blank" rel="noopener noreferrer"><img src={instagrame} className='desktop-profile-link-img' alt="Instagrame Logo"/></a>

@@ -1,6 +1,16 @@
 import './tab.css';
 
 const TabFooter = () =>{
+    const scrollToSection = (sectionId) => {
+        const sectionElement = document.getElementById(sectionId);
+    
+        if (sectionElement) {
+          sectionElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+          });
+        }
+      };
     return(
         <footer className='tab-footer'>
             <div className='tab-footer-inner'>
@@ -11,12 +21,12 @@ const TabFooter = () =>{
                 </div>
                 <div className='tab-link'>
                     <h2>Quick Links</h2><br />
-                    <a href='#home-tab'><i class="fa-solid fa-up-right-from-square"></i> Home</a><br />
-                    <a href='#about-me-tab'><i class="fa-solid fa-up-right-from-square"></i> About Me</a><br />
-                    <a href='#skill-tab'><i class="fa-solid fa-up-right-from-square"></i> Skill</a><br />
-                    <a href='#education-tab'><i class="fa-solid fa-up-right-from-square"></i> Education</a><br />
-                    <a href='#project-tab'><i class="fa-solid fa-up-right-from-square"></i> Project</a><br />
-                    <a href='#contact-tab'><i class="fa-solid fa-up-right-from-square"></i> Contact</a><br />
+                    <a onClick={() => scrollToSection('home-tab')}><i class="fa-solid fa-up-right-from-square"></i> Home</a><br />
+                    <a onClick={() => scrollToSection('about-me-tab')}><i class="fa-solid fa-up-right-from-square"></i> About Me</a><br />
+                    <a onClick={() => scrollToSection('skill-tab')}><i class="fa-solid fa-up-right-from-square"></i> Skill</a><br />
+                    <a onClick={() => scrollToSection('education-tab')}><i class="fa-solid fa-up-right-from-square"></i> Education</a><br />
+                    <a onClick={() => scrollToSection('project-tab')}><i class="fa-solid fa-up-right-from-square"></i> Project</a><br />
+                    <a onClick={() => scrollToSection('contact-tab')}><i class="fa-solid fa-up-right-from-square"></i> Contact</a><br />
                 </div>
                 <div className='tab-info'>
                     <h2>Contact Info</h2><br />

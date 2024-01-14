@@ -1,6 +1,16 @@
 import './phone.css';
 
 const PhoneFooter = () =>{
+    const scrollToSection = (sectionId) => {
+        const sectionElement = document.getElementById(sectionId);
+    
+        if (sectionElement) {
+          sectionElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+          });
+        }
+      };
     return(
         <footer className='phone-footer'>
             <div className='phone-footer-inner'>
@@ -11,12 +21,12 @@ const PhoneFooter = () =>{
                 </div>
                 <div className='phone-link'>
                     <h2>Quick Links</h2><br />
-                    <a href='#home-phone'><i class="fa-solid fa-up-right-from-square"></i> Home</a><br />
-                    <a href='#about-me-phone'><i class="fa-solid fa-up-right-from-square"></i> About Me</a><br />
-                    <a href='#skill-phone'><i class="fa-solid fa-up-right-from-square"></i> Skill</a><br />
-                    <a href='#education-phone'><i class="fa-solid fa-up-right-from-square"></i> Education</a><br />
-                    <a href='#project-phone'><i class="fa-solid fa-up-right-from-square"></i> Project</a><br />
-                    <a href='#contact-phone'><i class="fa-solid fa-up-right-from-square"></i> Contact</a><br />
+                    <a onClick={() => scrollToSection('home-phone')}><i class="fa-solid fa-up-right-from-square"></i> Home</a><br />
+                    <a onClick={() => scrollToSection('about-me-phone')}><i class="fa-solid fa-up-right-from-square"></i> About Me</a><br />
+                    <a onClick={() => scrollToSection('skill-phone')}><i class="fa-solid fa-up-right-from-square"></i> Skill</a><br />
+                    <a onClick={() => scrollToSection('education-phone')}><i class="fa-solid fa-up-right-from-square"></i> Education</a><br />
+                    <a onClick={() => scrollToSection('project-phone')}><i class="fa-solid fa-up-right-from-square"></i> Project</a><br />
+                    <a onClick={() => scrollToSection('contact-phone')}><i class="fa-solid fa-up-right-from-square"></i> Contact</a><br />
                 </div>
                 <div className='phone-info'>
                     <h2>Contact Info</h2><br />

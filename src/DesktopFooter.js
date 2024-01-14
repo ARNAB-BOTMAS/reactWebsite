@@ -1,6 +1,16 @@
 import './desktop.css';
 
 const DesktopFooter = () =>{
+    const scrollToSection = (sectionId) => {
+        const sectionElement = document.getElementById(sectionId);
+    
+        if (sectionElement) {
+          sectionElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+          });
+        }
+      };
     return(
         <footer className='desktop-footer'>
             <div className='desktop-footer-inner'>
@@ -11,12 +21,12 @@ const DesktopFooter = () =>{
                 </div>
                 <div className='desktop-link'>
                     <h2>Quick Links</h2><br />
-                    <a href='#home-desktop'><i class="fa-solid fa-up-right-from-square"></i> Home</a><br />
-                    <a href='#about-me-desktop'><i class="fa-solid fa-up-right-from-square"></i> About Me</a><br />
-                    <a href='#skill-desktop'><i class="fa-solid fa-up-right-from-square"></i> Skill</a><br />
-                    <a href='#education-desktop'><i class="fa-solid fa-up-right-from-square"></i> Education</a><br />
-                    <a href='#project-desktop'><i class="fa-solid fa-up-right-from-square"></i> Project</a><br />
-                    <a href='#contact-desktop'><i class="fa-solid fa-up-right-from-square"></i> Contact</a><br />
+                    <a onClick={() => scrollToSection('home-desktop')}><i class="fa-solid fa-up-right-from-square"></i> Home</a><br />
+                    <a onClick={() => scrollToSection('about-me-desktop')}><i class="fa-solid fa-up-right-from-square"></i> About Me</a><br />
+                    <a onClick={() => scrollToSection('skill-desktop')}><i class="fa-solid fa-up-right-from-square"></i> Skill</a><br />
+                    <a onClick={() => scrollToSection('education-desktop')}><i class="fa-solid fa-up-right-from-square"></i> Education</a><br />
+                    <a onClick={() => scrollToSection('project-desktop')}><i class="fa-solid fa-up-right-from-square"></i> Project</a><br />
+                    <a onClick={() => scrollToSection('contact-desktop')}><i class="fa-solid fa-up-right-from-square"></i> Contact</a><br />
                 </div>
                 <div className='desktop-info'>
                     <h2>Contact Info</h2><br />

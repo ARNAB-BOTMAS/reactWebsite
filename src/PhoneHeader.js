@@ -31,7 +31,16 @@ const PhoneHeader = () => {
       typed.destroy();
     };
   }, []); // Empty dependency array ensures that the effect runs only once on mount
+  const scrollToSection = (sectionId) => {
+    const sectionElement = document.getElementById(sectionId);
 
+    if (sectionElement) {
+      sectionElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  };
   return (
     <header className='phone-header' id='home-phone'>
       <div className='phone-profile'>
@@ -44,9 +53,9 @@ const PhoneHeader = () => {
             <h2>
                 I'm into <span className="phone-auto-type"></span> 
             </h2>
-            <a href='#about-me-phone'>
-              <button className='phone-profile-button'>About Me</button>
-            </a>
+            {/* <a href='#about-me-phone'> */}
+              <button className='phone-profile-button' onClick={() => scrollToSection('about-me-phone')}>About Me</button>
+            {/* </a> */}
             <div className='phone-profile-link'>
                 <a href="https://www.facebook.com/shagor.roy.370?mibextid=JRoKGi" target="_blank" rel="noopener noreferrer"><img src={facebook} className='phone-profile-link-img' alt="Facebook Logo"/></a>
                 <a href="https://www.instagram.com/shagor.roy.370/" target="_blank" rel="noopener noreferrer"><img src={instagrame} className='phone-profile-link-img' alt="Instagrame Logo"/></a>
