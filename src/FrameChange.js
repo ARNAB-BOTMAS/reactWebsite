@@ -20,6 +20,9 @@ import TabProject from './TabProject';
 import DesktopContact from './DesktopContact';
 import PhoneContact from './PhoneContact';
 import TabContact from './TabContact';
+import DesktopFooter from './DesktopFooter';
+import PhoneFooter from './PhoneFooter';
+import TabFooter from './TabFooter';
 
 const FrameChange = () => {
     return (
@@ -34,6 +37,7 @@ const FrameChange = () => {
               <DesktopProject />
               <DesktopContact />
             </main>
+            <DesktopFooter />
           </div>
           <div className='phone'>
             <PhoneNav />
@@ -45,6 +49,7 @@ const FrameChange = () => {
               <PhoneProject />
               <PhoneContact />
             </main>
+            <PhoneFooter />
           </div>
           <div className='tab'>
             <TabNav />
@@ -56,6 +61,7 @@ const FrameChange = () => {
               <TabProject />
               <TabContact />
             </main>
+            <TabFooter />
           </div>
         </div>
       );

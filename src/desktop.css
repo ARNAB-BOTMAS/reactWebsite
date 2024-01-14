@@ -1,3 +1,6 @@
+a{
+    cursor: pointer;
+}
 .desktop-nav{
     display: flex;
     background: #fff;
@@ -402,4 +405,52 @@ form{
     border: 3px solid #190482;
     box-shadow: 0 0 20px #0000004e;
 
+}
+
+.desktop-footer{
+    text-align: center;
+    background: #333;
+    padding: 20px 200px;
+    color: #fff;
+}
+.desktop-footer-inner{
+    display: flex;
+    justify-content: space-between;
+    justify-self: center;
+    justify-items: center;
+    /* align-items: center; */
+    gap: 5%;
+}
+.desktop-port{
+    text-align: left;
+    width: 34%;
+}
+.desktop-link{
+    text-align: left;
+    width: 20%;
+    padding-left: 15px;
+}
+.desktop-info{
+    text-align: left;
+    width: 34%;
+}
+
+.desktop-footer-inner a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.desktop-heart{
+    --fa-animation-duration: 0.5s;
+    color: red;
+}
+
+.desktop-bottom{
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 2px solid #888;
+}
+.desktop-info a{
+    font-size: 20px;
+    margin-right: 10px;
 }

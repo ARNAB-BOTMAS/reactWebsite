@@ -9,6 +9,17 @@ const PhoneNav = () => {
         setIsActive(!isActive);
     };
 
+    const scrollToSection = (sectionId) => {
+        const sectionElement = document.getElementById(sectionId);
+    
+        if (sectionElement) {
+          sectionElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+          });
+        }
+      };
+
     return (
         <nav className={`phone-nav ${isActive ? 'active' : ''}`}>
             <div className='phone-logo-nav'>
@@ -16,12 +27,12 @@ const PhoneNav = () => {
             </div>
             <div className={`phone-nav-link ${isActive ? 'active' : ''}`}>
                 <ul>
-                    <a href='#home-phone'>Home</a>
-                    <a href='#about-me-phone'><li>About Me</li></a>
-                    <a href='#skill-phone'><li>Skill</li></a>
-                    <a href='#education-phone'><li>Education</li></a>
-                    <a href='#project-phone'><li>Project</li></a>
-                    <a href='#contact-phone'><li>Contact</li></a>
+                    <a onClick={() => scrollToSection('home-phone')}><li>Home</li></a>
+                    <a onClick={() => scrollToSection('about-me-phone')}><li>About Me</li></a>
+                    <a onClick={() => scrollToSection('skill-phone')}><li>Skill</li></a>
+                    <a onClick={() => scrollToSection('education-phone')}><li>Education</li></a>
+                    <a onClick={() => scrollToSection('project-phone')}><li>Project</li></a>
+                    <a onClick={() => scrollToSection('contact-phone')}><li>Contact</li></a>
                 </ul>
             </div>
             <div className={`hamburgs ${isActive ? 'active' : ''}`} onClick={handleHamburgerClick}>

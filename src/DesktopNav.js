@@ -1,6 +1,16 @@
 import logo from './logo.svg';
 import './desktop.css';
 const DesktopNav = () =>{
+  const scrollToSection = (sectionId) => {
+    const sectionElement = document.getElementById(sectionId);
+
+    if (sectionElement) {
+      sectionElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  };
     return(
         <nav className='desktop-nav'>
         <div className='desktop-logo-nav'>
@@ -8,12 +18,12 @@ const DesktopNav = () =>{
         </div>
         <div className='desktop-nav-link'>
           <ul>
-              <a href='#home-desktop'>Home</a>
-              <a href='#about-me-desktop'><li>About Me</li></a>
-              <a href='#skill-desktop'><li>Skill</li></a>
-              <a href='#education-desktop'><li>Education</li></a>
-              <a href='#project-desktop'><li>Project</li></a>
-              <a href='#contact-desktop'><li>Contact</li></a>
+              <a onClick={() => scrollToSection('home-desktop')}><li>Home</li></a>
+              <a onClick={() => scrollToSection('about-me-desktop')}><li>About Me</li></a>
+              <a onClick={() => scrollToSection('skill-desktop')}><li>Skill</li></a>
+              <a onClick={() => scrollToSection('education-desktop')}><li>Education</li></a>
+              <a onClick={() => scrollToSection('project-desktop')}><li>Project</li></a>
+              <a onClick={() => scrollToSection('contact-desktop')}><li>Contact</li></a>
           </ul>
         </div>
       </nav>

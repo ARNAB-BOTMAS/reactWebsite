@@ -477,4 +477,53 @@
 
 }
 
+.tab-footer{
+    text-align: center;
+    background: #333;
+    padding: 20px 20px;
+    color: #fff;
+    font-size: smaller;
+}
 
+.tab-link{
+    padding: 10px 0;
+}
+.tab-info a{
+    margin-right: 10px;
+}
+.tab-footer-inner{
+    padding-bottom: 15px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+}
+
+.desktop-port{
+    text-align: left;
+    width: 34%;
+}
+.desktop-link{
+    text-align: left;
+    width: 20%;
+    padding-left: 15px;
+}
+.desktop-info{
+    text-align: left;
+    width: 34%;
+}
+
+.tab-footer-inner a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.tab-bottom{
+    padding-top: 10px;
+    border-top: 2px solid #888;
+}
+
+.tab-heart{
+    --fa-animation-duration: 0.5s;
+    color: red;
+}

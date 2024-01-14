@@ -454,4 +454,37 @@
 
 }
 
+.phone-footer{
+    text-align: center;
+    background: #333;
+    padding: 20px 20px;
+    color: #fff;
+    font-size: smaller;
+}
+
+.phone-link{
+    padding: 10px 0;
+}
+.phone-info a{
+    margin-right: 10px;
+}
+.phone-footer-inner{
+    padding-bottom: 15px;
+    text-align: left;
+}
+
+.phone-footer-inner a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.phone-bottom{
+    padding-top: 10px;
+    border-top: 2px solid #888;
+}
+
+.phone-heart{
+    --fa-animation-duration: 0.5s;
+    color: red;
+}
 

@@ -9,6 +9,16 @@ const TabNav = () => {
         setIsActive(!isActive);
     };
 
+    const scrollToSection = (sectionId) => {
+        const sectionElement = document.getElementById(sectionId);
+    
+        if (sectionElement) {
+          sectionElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+          });
+        }
+      };
     return (
         <nav className={`tab-nav ${isActive ? 'active' : ''}`}>
             <div className='tab-logo-nav'>
@@ -16,12 +26,12 @@ const TabNav = () => {
             </div>
             <div className={`tab-nav-link ${isActive ? 'active' : ''}`}>
                 <ul>
-                    <a href='#home-tab'>Home</a>
-                    <a href='#about-me-tab'><li>About Me</li></a>
-                    <a href='#skill-tab'><li>Skill</li></a>
-                    <a href='#education-tab'><li>Education</li></a>
-                    <a href='#project-tab'><li>Project</li></a>
-                    <a href='#contact-tab'><li>Contact</li></a>
+                    <a onClick={() => scrollToSection('home-tab')}><li>Home</li></a>
+                    <a onClick={() => scrollToSection('about-me-tab')}><li>About Me</li></a>
+                    <a onClick={() => scrollToSection('skill-tab')}><li>Skill</li></a>
+                    <a onClick={() => scrollToSection('education-tab')}><li>Education</li></a>
+                    <a onClick={() => scrollToSection('project-tab')}><li>Project</li></a>
+                    <a onClick={() => scrollToSection('contact-tab')}><li>Contact</li></a>
                 </ul>
             </div>
             <div className={`hamburgs ${isActive ? 'active' : ''}`} onClick={handleHamburgerClick}>
