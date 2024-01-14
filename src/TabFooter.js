@@ -21,12 +21,12 @@ const TabFooter = () =>{
                 </div>
                 <div className='tab-link'>
                     <h2>Quick Links</h2><br />
-                    <a onClick={() => scrollToSection('home-tab')}><i class="fa-solid fa-up-right-from-square"></i> Home</a><br />
-                    <a onClick={() => scrollToSection('about-me-tab')}><i class="fa-solid fa-up-right-from-square"></i> About Me</a><br />
-                    <a onClick={() => scrollToSection('skill-tab')}><i class="fa-solid fa-up-right-from-square"></i> Skill</a><br />
-                    <a onClick={() => scrollToSection('education-tab')}><i class="fa-solid fa-up-right-from-square"></i> Education</a><br />
-                    <a onClick={() => scrollToSection('project-tab')}><i class="fa-solid fa-up-right-from-square"></i> Project</a><br />
-                    <a onClick={() => scrollToSection('contact-tab')}><i class="fa-solid fa-up-right-from-square"></i> Contact</a><br />
+                    <button onClick={() => scrollToSection('home-tab')}><i className="fa-solid fa-up-right-from-square"></i> Home</button><br />
+                    <button onClick={() => scrollToSection('about-me-tab')}><i className="fa-solid fa-up-right-from-square"></i> About Me</button><br />
+                    <button onClick={() => scrollToSection('skill-tab')}><i className="fa-solid fa-up-right-from-square"></i> Skill</button><br />
+                    <button onClick={() => scrollToSection('education-tab')}><i className="fa-solid fa-up-right-from-square"></i> Education</button><br />
+                    <button onClick={() => scrollToSection('project-tab')}><i className="fa-solid fa-up-right-from-square"></i> Project</button><br />
+                    <button onClick={() => scrollToSection('contact-tab')}><i className="fa-solid fa-up-right-from-square"></i> Contact</button><br />
                 </div>
                 <div className='tab-info'>
                     <h2>Contact Info</h2><br />

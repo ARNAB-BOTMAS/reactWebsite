@@ -20,6 +20,12 @@ a {
     top: 100px;
 }
 
+.tab-nav-link button{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
 .tab-nav-link ul {
     display: flex;
     position: fixed;
@@ -525,4 +531,11 @@ a {
 .tab-heart{
     --fa-animation-duration: 0.5s;
     color: red;
+}
+
+.tab-link button{
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
 }

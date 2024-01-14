@@ -1,16 +1,16 @@
 import './phone.css';
 
 const PhoneFooter = () =>{
-    const scrollToSection = (sectionId) => {
-        const sectionElement = document.getElementById(sectionId);
-    
-        if (sectionElement) {
-          sectionElement.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start',
-          });
-        }
-      };
+      const scrollToSection = (sectionId) => {
+    const sectionElement = document.getElementById(sectionId);
+
+    if (sectionElement) {
+      sectionElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  };
     return(
         <footer className='phone-footer'>
             <div className='phone-footer-inner'>
@@ -21,12 +21,12 @@ const PhoneFooter = () =>{
                 </div>
                 <div className='phone-link'>
                     <h2>Quick Links</h2><br />
-                    <a onClick={() => scrollToSection('home-phone')}><i class="fa-solid fa-up-right-from-square"></i> Home</a><br />
-                    <a onClick={() => scrollToSection('about-me-phone')}><i class="fa-solid fa-up-right-from-square"></i> About Me</a><br />
-                    <a onClick={() => scrollToSection('skill-phone')}><i class="fa-solid fa-up-right-from-square"></i> Skill</a><br />
-                    <a onClick={() => scrollToSection('education-phone')}><i class="fa-solid fa-up-right-from-square"></i> Education</a><br />
-                    <a onClick={() => scrollToSection('project-phone')}><i class="fa-solid fa-up-right-from-square"></i> Project</a><br />
-                    <a onClick={() => scrollToSection('contact-phone')}><i class="fa-solid fa-up-right-from-square"></i> Contact</a><br />
+                    <button onClick={() => scrollToSection('home-phone')}><i className="fa-solid fa-up-right-from-square"></i> Home</button><br />
+                    <button onClick={() => scrollToSection('about-me-phone')}><i className="fa-solid fa-up-right-from-square"></i> About Me</button><br />
+                    <button onClick={() => scrollToSection('skill-phone')}><i className="fa-solid fa-up-right-from-square"></i> Skill</button><br />
+                    <button onClick={() => scrollToSection('education-phone')}><i className="fa-solid fa-up-right-from-square"></i> Education</button><br />
+                    <button onClick={() => scrollToSection('project-phone')}><i className="fa-solid fa-up-right-from-square"></i> Project</button><br />
+                    <button onClick={() => scrollToSection('contact-phone')}><i className="fa-solid fa-up-right-from-square"></i> Contact</button><br />
                 </div>
                 <div className='phone-info'>
                     <h2>Contact Info</h2><br />

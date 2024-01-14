@@ -30,6 +30,12 @@ a{
     justify-content: center;
 }
 
+.desktop-nav-link button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
 .desktop-header{
     /* margin-top: 20px; */
     padding-left: 100px;
@@ -429,6 +435,13 @@ form{
     text-align: left;
     width: 20%;
     padding-left: 15px;
+}
+
+.desktop-link button{
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
 }
 .desktop-info{
     text-align: left;
