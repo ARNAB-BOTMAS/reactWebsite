@@ -2,6 +2,7 @@ import ai from './image/back-project/AI.jpg';
 import time from './image/back-project/overtime.jpg';
 import album from './image/back-project/photoAlbum.jpeg';
 import react from './image/back-project/reactjs.jpg';
+import chat from './image/back-project/ChatVector.png';
 
 import './phone.css';
 
@@ -44,6 +45,13 @@ const PhoneProject = () =>{
                         <img src={react} alt='AI' className='phone-project-card-image'/>
                         <div className='phone-back-color'>Go to the Project <i class="fa-solid fa-arrow-right-long"></i></div>
                         <h4>React Website</h4>
+                    </a>
+                </section>
+                <section className='phone-project-card'>
+                    <a href="https://github.com/ARNAB-BOTMAS/ChatReactJS" target="blank">
+                        <img src={chat} alt='AI' className='phone-project-card-image'/>
+                        <div className='phone-back-color'>Go to the Project <i class="fa-solid fa-arrow-right-long"></i></div>
+                        <h4>React Chat Application</h4>
                     </a>
                 </section>
             </div>

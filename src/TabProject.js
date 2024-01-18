@@ -2,6 +2,7 @@ import ai from './image/back-project/AI.jpg';
 import time from './image/back-project/overtime.jpg';
 import album from './image/back-project/photoAlbum.jpeg';
 import react from './image/back-project/reactjs.jpg';
+import chat from './image/back-project/ChatVector.png';
 
 import './tab.css';
 
@@ -44,6 +45,13 @@ const TabProject = () =>{
                         <img src={react} alt='AI' className='tab-project-card-image'/>
                         <div className='tab-back-color'>Go to the Project <i class="fa-solid fa-arrow-right-long"></i></div>
                         <h4>React Website</h4>
+                    </a>
+                </section>
+                <section className='tab-project-card'>
+                    <a href="https://github.com/ARNAB-BOTMAS/ChatReactJS" target="blank">
+                        <img src={chat} alt='AI' className='tab-project-card-image'/>
+                        <div className='tab-back-color'>Go to the Project <i class="fa-solid fa-arrow-right-long"></i></div>
+                        <h4>React Chat Application</h4>
                     </a>
                 </section>
             </div>
