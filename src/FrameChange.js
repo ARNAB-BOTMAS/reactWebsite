@@ -24,12 +24,14 @@ import DesktopFooter from './DesktopFooter';
 import PhoneFooter from './PhoneFooter';
 import TabFooter from './TabFooter';
 
+
 const FrameChange = () => {
     return (
         <div className="App-inner">
           <div className='desktop'>
             <DesktopNav />
-            <DesktopHeader />
+            <DesktopHeader>
+            </DesktopHeader>
             <main>
               <DesktopAbout />
               <DesktopSkill />

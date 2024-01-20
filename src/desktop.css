@@ -2,13 +2,14 @@ a{
     cursor: pointer;
 }
 .desktop-nav{
+    position: relative;
     display: flex;
     background: #fff;
     justify-content: space-between;
     position: fixed;
     padding: 15px 0;
     width: 100%;
-    z-index: 1;
+    z-index: 1000;
 }
 .desktop-logo-nav{
     padding-left: 60px;
@@ -51,10 +52,22 @@ a{
 
 .desktop-profile{
     display: flex;
+    position: relative;
+    /* background: #000; */
+    z-index: 999;
 }
 
 .desktop-profile-text{
+    position: relative;
+    opacity: 1;
     padding-left: 50px;
+    animation: fade-out linear;
+    animation-timeline: view();
+    animation-range: exit;
+}
+
+@keyframes fade-out{
+    to { opacity: 0; }
 }
 .desktop-profile-text h1{
     margin: 0;
@@ -68,10 +81,21 @@ a{
 }
 
 .desktop-profile-img{
+    position: relative;
+    scale: 1; opacity: 1;
+    /* left: -100%; */
     max-width: 40%;
     border-radius: 50%;
+    object-fit: cover;
     box-shadow: 0px 5px 10px #0000004e;
     transition: all 0.3s;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: exit;
+}
+
+@keyframes fade-in {
+    to {scale: .9; opacity: 0;}
 }
 
 .desktop-profile-img:hover{
@@ -121,6 +145,7 @@ a{
 }
 .desktop-about{
     padding: 50px 200px;
+    position: relative;
     text-align: center;
 }
 .desktop-about-inner{
@@ -128,6 +153,7 @@ a{
     padding: 30px 0;
 }
 .desktop-about-inner-image{
+    scale: 1; opacity: 1;
     width: 18vw;
     margin: 0 50px;
     border-radius: 20px;
@@ -135,6 +161,13 @@ a{
     box-shadow: 0 5px 10px #0000004e;
     filter: grayscale(1) brightness(1.4);
     transition: all 0.3s;
+    animation: fade-left linear forwards;
+    animation-timeline: view();
+    animation-range: exit 1px ;
+}
+
+@keyframes fade-left{
+    to{scale: 0.8; opacity: 0;}
 }
 .desktop-about-inner-image:hover{
     filter: none;
@@ -142,8 +175,16 @@ a{
 }
 
 .desktop-about-text{
+    opacity: 1;
     text-align: left;
     margin: 0 50px;
+    animation: fade-text linear;
+    animation-timeline: view();
+    animation-range: exit;
+}
+
+@keyframes fade-text{
+    to {opacity: 0;}
 }
 
 .download-resume-desktop{
@@ -165,12 +206,15 @@ a{
     color: #fff;
     background: #711DB0;
     text-align: center;
+    position: relative;
 }
 .desktop-skill-inner{
-    display: grid;
-    padding: 40px 300px;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 250px;
+    gap: 20px;
 }
 
 .desktop-skill-card-image{
@@ -211,6 +255,7 @@ a{
 .desktop-education{
     padding: 40px 100px;
     text-align: center;
+    position: relative;
 }
 .desktop-education-card {
     display: flex;
@@ -260,6 +305,7 @@ a{
     text-align: center;
     background: #365486;
     color: #fff;
+    position: relative;
 }
 
 .desktop-back-color{
@@ -414,6 +460,7 @@ form{
 }
 
 .desktop-footer{
+    position: relative;
     text-align: center;
     background: #333;
     padding: 20px 200px;

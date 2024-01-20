@@ -5,6 +5,8 @@ import instagrame from './image/logo/Instagram.png';
 import linkedin from './image/logo/LinkedIn.png';
 import telegrame from './image/logo/Telegram.png';
 import whatsapp from './image/logo/WhatsApp.png';
+import Design from './design/Design';
+
 
 import React, { useEffect } from 'react';
 import './desktop.css'
@@ -67,6 +69,7 @@ const DesktopHeader = () => {
             </div>
         </div>
       </div>
+      <Design />
     </header>
   );
 };
